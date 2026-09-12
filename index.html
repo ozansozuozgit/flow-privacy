@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Flow handles your account, workout history, health information, photos, and connected services.">
+  <title>Flow — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; }
+    body { margin: 0; background: light-dark(#faf9f7, #151515); color: light-dark(#262521, #eceae5); }
+    main { max-width: 44rem; padding: 3rem 1.25rem 5rem; margin: auto; }
+    h1 { font-size: clamp(2rem, 8vw, 3rem); line-height: 1.15; margin: .4rem 0 1rem; }
+    h2 { font-size: 1.3rem; line-height: 1.3; margin-top: 2.25rem; }
+    p, ul { margin: 1rem 0; }
+    li + li { margin-top: .65rem; }
+    a { color: light-dark(#345b42, #afd1b5); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    .meta { color: light-dark(#68645d, #aaa69e); font-size: .9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="meta">FLOW</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated September 12, 2026 · Flow for iPhone and Apple Watch</p>
+
+  <p>Flow is an adaptive workout app developed by Ozan Sozuoz. It stores training information on your device and uses connected services for account access, backup, and optional features. This policy explains the information involved and the choices available to you.</p>
+
+  <h2>Information you enter</h2>
+  <p>Flow stores your workout sessions and exercises, weights, repetitions, effort ratings, duration, distance, notes, bodyweight, body measurements, training goals, routines, schedules, equipment preferences, and training constraints you provide. It uses these records to plan workouts, support logging, suggest progression, and show your history and progress.</p>
+  <p>If you import a workout file or Apple Health export, Flow processes the selected file on your device. Supported workout and bodyweight records, source identifiers, and import records become part of your Flow data. Imported CSV rows can include the original text supplied in the file.</p>
+
+  <h2>Your account and cloud copies</h2>
+  <p>Flow uses Supabase for email and password sign-in, account recovery, and account sync. Your email address and authentication information are sent to Supabase when you use these features. Your device stores the session information needed to keep you signed in.</p>
+  <p>While you are signed in, Flow uploads workout changes and a backup of your saved training records and selected preferences to your account. These copies can include bodyweight, measurements, notes, routines, schedules, imported records, and health statistics saved with a workout. Backups also include a device name, timestamps, and record identifiers used to manage sync. They are associated with your Flow account and are not a public profile.</p>
+  <p>When iCloud is available, the current version also writes a training backup to Flow's private container in your Apple account, automatically after workouts and during eligible background events, or when you choose “Back up now.” This backup includes the same saved records and selected preferences. You can restore it through Settings. Your device's own backups may separately contain Flow files, depending on your Apple settings.</p>
+
+  <h2>Apple Health and Apple Watch</h2>
+  <p>With your Apple Health permissions, Flow reads sleep duration, heart rate variability, resting heart rate, and their recent baselines to help suggest training energy. It can read overlapping strength workouts, heart rate statistics, and active energy to show Apple Watch workout results and avoid creating a duplicate workout. When no overlapping workout is found, Flow can save a completed strength workout to Apple Health.</p>
+  <p>Heart rate and active energy results saved with a Flow session become part of that session's backups and sync. Turning off Apple Health in Flow Settings stops further HealthKit access by Flow; you can also revoke permissions in Apple's Health settings. This does not delete records already saved in Flow or Apple Health.</p>
+  <p>Flow exchanges the active workout, planned sets, logged sets, and rest timer state with its companion app on your paired Apple Watch through Apple's WatchConnectivity service.</p>
+
+  <h2>Photos and custom exercise images</h2>
+  <p>Flow requests camera or photo library access when you choose to add an image. It copies selected progress photos and custom exercise images into the app's storage on your device. Flow's account sync and its own JSON cloud backups do not upload the image bytes. Progress-photo dates, notes, record identifiers, and local file references are included in the training backup. Apple's device backup may separately include the image files.</p>
+
+  <h2>AI features</h2>
+  <p>In a build configured with Google Gemini, Flow sends text to Google's Gemini API to produce workout reflections, weekly notes, program summaries and check-ins, and to interpret workout requests, goals, or training constraints. The submitted text can include exercise names, sets and best lifts, training volume, effort or energy, personal records, program progress, equipment-based exercise choices, and text you enter. It does not attach your progress photos or send your Flow account password in these requests.</p>
+  <p>The current build enables these calls through its build configuration; the AI Voice row in Settings reports availability and tests the connection. Builds without a Gemini key use local fallback behavior. Google's processing and retention depend on the Gemini service and account configuration used for that build.</p>
+
+  <h2>Strava</h2>
+  <p>In a build with Strava enabled, connecting your Strava account authorizes Flow to create activities. Flow stores the access and refresh tokens needed for that connection and your Strava athlete name on your device. When you upload a workout, Flow sends its title, start time, duration, exercise names, repetitions, and weights to Strava. Automatic uploads are controlled in Flow Settings. Strava controls the visibility and handling of an uploaded activity according to your Strava settings and its policies.</p>
+  <p>You can disconnect in Flow Settings and revoke Flow's access in Strava. Disconnecting does not delete activities previously uploaded to Strava; remove those in Strava if you wish.</p>
+
+  <h2>Notifications, sharing, and service providers</h2>
+  <p>Rest timers and training reminders use local notifications. Widgets and Live Activities show selected workout information through Apple's system features. You can control notification and Lock Screen visibility in your device settings.</p>
+  <p>When you export or share a report or backup, you choose the destination using your device's sharing controls. Anyone who receives a file can retain their own copy.</p>
+  <p>Flow does not include advertising or third-party behavioral analytics. The connected services described above receive information needed to handle your requests, including standard network information such as your IP address. Their privacy information is available from <a href="https://supabase.com/privacy">Supabase</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://ai.google.dev/gemini-api/terms">Google Gemini</a>, and <a href="https://www.strava.com/legal/privacy">Strava</a>.</p>
+  <p>This policy website is hosted on GitHub Pages and contains no analytics scripts or advertising. GitHub may process standard request information when you visit, as described in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
+
+  <h2>Retention, access, and deletion</h2>
+  <p>Flow keeps your active training records until you remove them, replace your history, or clear the app's local data. Deleting an individual record can preserve a deletion marker and older copies in backups. Flow keeps up to eight automatic weekly snapshots on your device and can retain separate backups made before a database upgrade.</p>
+  <p>Use Settings → Export History to save a CSV or JSON copy. Use Settings → Delete account to request removal of your Flow account and its active Supabase backup and sync records. This action requires a working connection. If it reports an error, account removal or local cleanup may be incomplete; contact the developer if you cannot confirm the result.</p>
+  <p>Account deletion does not remove files you exported, activities in Strava, Apple Health records, or copies in your Apple account. The current local cleanup clears the active workout database; separately stored photos, local snapshots, upgrade backups, preferences, and connected-service tokens can remain on the device. Deleting the app removes its local container; separately manage Apple backups and connected-service records to remove those copies.</p>
+  <p>Operational logs and backup copies held by service providers follow their applicable retention settings and legal obligations.</p>
+
+  <h2>Contact and changes</h2>
+  <p>For privacy questions or help with a deletion request, contact Ozan Sozuoz at <a href="mailto:ozansozuoz@gmail.com">ozansozuoz@gmail.com</a>. Please do not include passwords or your full health history in an email.</p>
+  <p>The date at the top will be updated when this policy changes. Material changes to data handling will be reflected in the policy and relevant app disclosures.</p>
+</main>
+</body>
+</html>
